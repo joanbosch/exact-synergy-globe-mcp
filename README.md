@@ -1,0 +1,1 @@
+# exact-synergy-globe-mcp
