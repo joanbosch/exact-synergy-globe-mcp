@@ -1,6 +1,6 @@
 import { mkdir, readFile, rename, writeFile } from "node:fs/promises";
 import { dirname } from "node:path";
-import { catalogSchema, type ExactCatalog } from "./catalog-types.js";
+import { catalogSchema, type ExactCatalog } from "@catalog/catalog-types.js";
 
 export class MetadataCache {
   public constructor(private readonly path: string | undefined) {}

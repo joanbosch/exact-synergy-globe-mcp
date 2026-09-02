@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from "@modelcontextprotocol/sdk/server/stdio.js";
-import { loadConfig } from "./config/env.js";
-import { createLogger } from "./observability/logger.js";
-import { createServer } from "./server/create-server.js";
-import { installLifecycle } from "./server/lifecycle.js";
+import { loadConfig } from "@config/env.js";
+import { createLogger } from "@observability/logger.js";
+import { createServer } from "@server/create-server.js";
+import { installLifecycle } from "@server/lifecycle.js";
 
 export async function main(): Promise<void> {
   const config = loadConfig();

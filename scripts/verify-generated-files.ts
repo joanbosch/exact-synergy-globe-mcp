@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { z } from "zod";
-import { catalogSchema } from "../src/catalog/catalog-types.js";
+import { catalogSchema } from "@catalog/catalog-types.js";
 
 const path = new URL("../schemas/catalog.schema.json", import.meta.url);
 const actual = await readFile(path, "utf8");

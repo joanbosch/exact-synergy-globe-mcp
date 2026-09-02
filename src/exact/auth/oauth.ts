@@ -1,6 +1,6 @@
 import axios from "axios";
-import type { ExactConfig } from "../../config/types.js";
-import type { AuthProvider } from "./auth-provider.js";
+import type { ExactConfig } from "@config/types.js";
+import type { AuthProvider } from "@exact/auth/auth-provider.js";
 
 export function createOauthAuth(config: ExactConfig): AuthProvider {
   return {

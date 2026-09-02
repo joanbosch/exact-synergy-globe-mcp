@@ -1,19 +1,19 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
 import { z } from "zod";
-import { capabilities } from "../catalog/capability-resolver.js";
-import type { ExactConfig } from "../config/types.js";
-import type { ExactService } from "../exact/service.js";
-import type { AccessPolicy } from "../policy/access-policy.js";
-import { executeActionInput, flowInput } from "../schemas/action.js";
-import { entityNameSchema } from "../schemas/common.js";
+import { capabilities } from "@catalog/capability-resolver.js";
+import type { ExactConfig } from "@config/types.js";
+import type { ExactService } from "@exact/service.js";
+import type { AccessPolicy } from "@policy/access-policy.js";
+import { executeActionInput, flowInput } from "@schemas/action.js";
+import { entityNameSchema } from "@schemas/common.js";
 import {
   createEntityInput,
   deleteEntityInput,
   getEntityInput,
   listEntityInput,
   updateEntityInput,
-} from "../schemas/entity.js";
-import { safely } from "./tool-result.js";
+} from "@schemas/entity.js";
+import { safely } from "@tools/tool-result.js";
 
 const READ_ONLY = {
   readOnlyHint: true,

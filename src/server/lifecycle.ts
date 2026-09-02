@@ -1,5 +1,5 @@
 import type { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import type { Logger } from "../observability/logger.js";
+import type { Logger } from "@observability/logger.js";
 
 export function installLifecycle(
   server: McpServer,

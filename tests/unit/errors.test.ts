@@ -1,6 +1,6 @@
 import { AxiosError } from "axios";
 import { describe, expect, it } from "vitest";
-import { normalizeExactError } from "../../src/exact/errors.js";
+import { normalizeExactError } from "@exact/errors.js";
 
 describe("Exact errors", () => {
   it("marks interrupted mutations as unknown and does not suggest an automatic retry", () => {

@@ -2,9 +2,9 @@ import { Client } from "@modelcontextprotocol/sdk/client/index.js";
 import { InMemoryTransport } from "@modelcontextprotocol/sdk/inMemory.js";
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
 import { afterEach, describe, expect, it } from "vitest";
-import { loadConfig } from "../../src/config/env.js";
-import { createLogger } from "../../src/observability/logger.js";
-import { createServer } from "../../src/server/create-server.js";
+import { loadConfig } from "@config/env.js";
+import { createLogger } from "@observability/logger.js";
+import { createServer } from "@server/create-server.js";
 
 const closeables: { close: () => Promise<void> }[] = [];
 afterEach(async () =>

@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { loadConfig, safeEnvironmentSummary } from "../../src/config/env.js";
+import { loadConfig, safeEnvironmentSummary } from "@config/env.js";
 
 describe("configuration", () => {
   it("starts safely without a live connection", () => {

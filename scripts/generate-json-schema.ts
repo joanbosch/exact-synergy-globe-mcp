@@ -1,6 +1,6 @@
 import { mkdir, writeFile } from "node:fs/promises";
 import { z } from "zod";
-import { catalogSchema } from "../src/catalog/catalog-types.js";
+import { catalogSchema } from "@catalog/catalog-types.js";
 
 const output = new URL("../schemas/catalog.schema.json", import.meta.url);
 await mkdir(new URL("../schemas/", import.meta.url), { recursive: true });

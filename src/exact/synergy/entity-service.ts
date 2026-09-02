@@ -1,1 +1,1 @@
-export { ExactClient as SynergyEntityService } from "../client.js";
+export { ExactClient as SynergyEntityService } from "@exact/client.js";

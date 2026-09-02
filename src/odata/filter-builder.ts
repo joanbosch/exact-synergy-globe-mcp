@@ -1,5 +1,5 @@
-import type { ExactEntity, ExactProperty } from "../catalog/catalog-types.js";
-import type { Filter } from "./filter-schema.js";
+import type { ExactEntity, ExactProperty } from "@catalog/catalog-types.js";
+import type { Filter } from "@odata/filter-schema.js";
 
 function property(entity: ExactEntity, name: string): ExactProperty {
   const match = entity.properties.find((item) => item.name === name);

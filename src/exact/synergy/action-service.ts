@@ -1,1 +1,1 @@
-export { ExactClient as SynergyActionService } from "../client.js";
+export { ExactClient as SynergyActionService } from "@exact/client.js";

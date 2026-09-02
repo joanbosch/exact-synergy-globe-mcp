@@ -1,11 +1,11 @@
 import { z } from "zod";
-import { filterSchema } from "../odata/filter-schema.js";
+import { filterSchema } from "@odata/filter-schema.js";
 import {
   entityKeySchema,
   entityNameSchema,
   fieldsSchema,
   payloadSchema,
-} from "./common.js";
+} from "@schemas/common.js";
 
 export const getEntityInput = {
   entity: entityNameSchema,

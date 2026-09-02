@@ -1,6 +1,6 @@
-import type { ExactEntity } from "../catalog/catalog-types.js";
-import type { Filter } from "./filter-schema.js";
-import { buildFilter } from "./filter-builder.js";
+import type { ExactEntity } from "@catalog/catalog-types.js";
+import type { Filter } from "@odata/filter-schema.js";
+import { buildFilter } from "@odata/filter-builder.js";
 
 export type EntityQuery = Readonly<{
   select?: string[];

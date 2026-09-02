@@ -1,9 +1,9 @@
-import type { ExactConfig } from "../config/types.js";
-import type { ExactClient } from "../exact/client.js";
-import type { Logger } from "../observability/logger.js";
-import { parseMetadata } from "../odata/metadata-parser.js";
-import { type ExactCatalog } from "./catalog-types.js";
-import { MetadataCache } from "./metadata-cache.js";
+import type { ExactConfig } from "@config/types.js";
+import type { ExactClient } from "@exact/client.js";
+import type { Logger } from "@observability/logger.js";
+import { parseMetadata } from "@odata/metadata-parser.js";
+import { type ExactCatalog } from "@catalog/catalog-types.js";
+import { MetadataCache } from "@catalog/metadata-cache.js";
 
 export class CatalogLoader {
   private catalog: ExactCatalog | undefined;

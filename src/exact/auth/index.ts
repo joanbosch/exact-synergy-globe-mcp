@@ -1,8 +1,8 @@
-import type { ExactConfig } from "../../config/types.js";
-import type { AuthProvider } from "./auth-provider.js";
-import { createBasicAuth } from "./basic.js";
-import { createNtlmAuth } from "./ntlm.js";
-import { createOauthAuth } from "./oauth.js";
+import type { ExactConfig } from "@config/types.js";
+import type { AuthProvider } from "@exact/auth/auth-provider.js";
+import { createBasicAuth } from "@exact/auth/basic.js";
+import { createNtlmAuth } from "@exact/auth/ntlm.js";
+import { createOauthAuth } from "@exact/auth/oauth.js";
 
 export function createAuthProvider(config: ExactConfig): AuthProvider {
   switch (config.connection.auth) {

@@ -1,14 +1,14 @@
 import { McpServer } from "@modelcontextprotocol/sdk/server/mcp.js";
-import { CatalogLoader } from "../catalog/catalog-loader.js";
-import type { ExactConfig } from "../config/types.js";
-import { ExactClient } from "../exact/client.js";
-import { ExactService } from "../exact/service.js";
-import { AuditLogger } from "../observability/audit.js";
-import type { Logger } from "../observability/logger.js";
-import { AccessPolicy } from "../policy/access-policy.js";
-import { registerResources } from "../resources/register-resources.js";
-import { registerTools } from "../tools/register-tools.js";
-import { SERVER_NAME, SERVER_VERSION } from "./capabilities.js";
+import { CatalogLoader } from "@catalog/catalog-loader.js";
+import type { ExactConfig } from "@config/types.js";
+import { ExactClient } from "@exact/client.js";
+import { ExactService } from "@exact/service.js";
+import { AuditLogger } from "@observability/audit.js";
+import type { Logger } from "@observability/logger.js";
+import { AccessPolicy } from "@policy/access-policy.js";
+import { registerResources } from "@resources/register-resources.js";
+import { registerTools } from "@tools/register-tools.js";
+import { SERVER_NAME, SERVER_VERSION } from "@server/capabilities.js";
 
 export type ServerDependencies = Readonly<{
   exactClient?: ExactClient;

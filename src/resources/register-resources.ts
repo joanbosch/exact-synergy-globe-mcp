@@ -2,10 +2,10 @@ import {
   McpServer,
   ResourceTemplate,
 } from "@modelcontextprotocol/sdk/server/mcp.js";
-import type { CatalogLoader } from "../catalog/catalog-loader.js";
-import { capabilities } from "../catalog/capability-resolver.js";
-import type { ExactConfig } from "../config/types.js";
-import type { AccessPolicy } from "../policy/access-policy.js";
+import type { CatalogLoader } from "@catalog/catalog-loader.js";
+import { capabilities } from "@catalog/capability-resolver.js";
+import type { ExactConfig } from "@config/types.js";
+import type { AccessPolicy } from "@policy/access-policy.js";
 
 const json = (uri: URL, value: unknown) => ({
   contents: [

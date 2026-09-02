@@ -16,3 +16,5 @@ stdio -> server -> tools/resources -> ExactService
 `ExactService` is transport-independent application logic. It resolves catalog objects, applies policy, builds safe OData, performs reads and mutations, verifies mutable results where possible, and emits audit events. MCP tools are thin adapters that return recoverable failures as `isError` results.
 
 The configured base URL is the Entity Services root. Product-specific action and Flow routes vary between Exact versions; execution is therefore limited to operations found in live metadata and explicitly allowlisted.
+
+Internal imports use semantic `@catalog/*`, `@config/*`, `@exact/*`, `@observability/*`, `@odata/*`, `@policy/*`, `@resources/*`, `@schemas/*`, `@server/*`, and `@tools/*` aliases. TypeScript and Vitest resolve them to source files, while `tsc-alias` rewrites compiled imports to relative paths so the published Node ESM executable needs no custom loader.

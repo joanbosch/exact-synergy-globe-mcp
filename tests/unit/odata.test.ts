@@ -1,7 +1,7 @@
 import { describe, expect, it } from "vitest";
-import type { ExactEntity } from "../../src/catalog/catalog-types.js";
-import { buildFilter } from "../../src/odata/filter-builder.js";
-import { buildQuery } from "../../src/odata/query-builder.js";
+import type { ExactEntity } from "@catalog/catalog-types.js";
+import { buildFilter } from "@odata/filter-builder.js";
+import { buildQuery } from "@odata/query-builder.js";
 
 const entity: ExactEntity = {
   name: "Account",

@@ -1,9 +1,6 @@
 import { describe, expect, it } from "vitest";
-import type {
-  ExactAction,
-  ExactEntity,
-} from "../../src/catalog/catalog-types.js";
-import { AccessPolicy } from "../../src/policy/access-policy.js";
+import type { ExactAction, ExactEntity } from "@catalog/catalog-types.js";
+import { AccessPolicy } from "@policy/access-policy.js";
 
 const entity: ExactEntity = {
   name: "Account",

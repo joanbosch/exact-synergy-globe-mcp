@@ -1,1 +1,1 @@
-export { ExactClient as GlobeEntityService } from "../client.js";
+export { ExactClient as GlobeEntityService } from "@exact/client.js";

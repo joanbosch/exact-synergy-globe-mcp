@@ -3,16 +3,16 @@ import type {
   ExactCatalog,
   ExactEntity,
   ExactProperty,
-} from "../catalog/catalog-types.js";
-import type { CatalogLoader } from "../catalog/catalog-loader.js";
-import type { ExactConfig } from "../config/types.js";
-import type { AuditLogger } from "../observability/audit.js";
-import { buildQuery, type EntityQuery } from "../odata/query-builder.js";
-import { decodeCursor, encodeCursor } from "../odata/pagination.js";
-import type { AccessPolicy, WriteOperation } from "../policy/access-policy.js";
-import { ExactClient } from "./client.js";
-import { ExactError } from "./errors.js";
-import { parseCollection, unwrapRecord } from "./response.js";
+} from "@catalog/catalog-types.js";
+import type { CatalogLoader } from "@catalog/catalog-loader.js";
+import type { ExactConfig } from "@config/types.js";
+import type { AuditLogger } from "@observability/audit.js";
+import { buildQuery, type EntityQuery } from "@odata/query-builder.js";
+import { decodeCursor, encodeCursor } from "@odata/pagination.js";
+import type { AccessPolicy, WriteOperation } from "@policy/access-policy.js";
+import { ExactClient } from "@exact/client.js";
+import { ExactError } from "@exact/errors.js";
+import { parseCollection, unwrapRecord } from "@exact/response.js";
 
 export type EntityKey =
   string | number | boolean | Record<string, string | number | boolean>;

@@ -1,4 +1,4 @@
-import type { Logger } from "./logger.js";
+import type { Logger } from "@observability/logger.js";
 
 export type AuditEvent = Readonly<{
   operation: string;

@@ -4,9 +4,9 @@ import {
   type ExactAction,
   type ExactCatalog,
   type ExactEntity,
-} from "../catalog/catalog-types.js";
-import type { ExactApiKind } from "../config/types.js";
-import { ExactError } from "../exact/errors.js";
+} from "@catalog/catalog-types.js";
+import type { ExactApiKind } from "@config/types.js";
+import { ExactError } from "@exact/errors.js";
 
 type XmlNode = Record<string, unknown>;
 

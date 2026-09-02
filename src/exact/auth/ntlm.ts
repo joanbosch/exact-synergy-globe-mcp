@@ -1,7 +1,7 @@
 import { NtlmClient } from "axios-ntlm";
 import type { AxiosInstance } from "axios";
-import type { ExactConfig } from "../../config/types.js";
-import type { AuthProvider } from "./auth-provider.js";
+import type { ExactConfig } from "@config/types.js";
+import type { AuthProvider } from "@exact/auth/auth-provider.js";
 
 export function createNtlmAuth(config: ExactConfig): AuthProvider {
   return {

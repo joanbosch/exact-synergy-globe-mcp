@@ -1,5 +1,5 @@
 import type { CallToolResult } from "@modelcontextprotocol/sdk/types.js";
-import { redact } from "../observability/redaction.js";
+import { redact } from "@observability/redaction.js";
 
 export function success(value: unknown): CallToolResult {
   const safe = redact(value);

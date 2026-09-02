@@ -21,6 +21,17 @@ export default tseslint.config(
       },
     },
     rules: {
+      "no-restricted-imports": [
+        "error",
+        {
+          patterns: [
+            {
+              group: ["./*", "../*"],
+              message: "Use the matching @layer/* TypeScript alias.",
+            },
+          ],
+        },
+      ],
       "@typescript-eslint/consistent-type-definitions": ["error", "type"],
       "@typescript-eslint/no-confusing-void-expression": "off",
       "@typescript-eslint/no-non-null-assertion": "off",

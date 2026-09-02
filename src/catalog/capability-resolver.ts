@@ -1,4 +1,4 @@
-import type { ExactCatalog } from "./catalog-types.js";
+import type { ExactCatalog } from "@catalog/catalog-types.js";
 
 export function capabilities(catalog: ExactCatalog): Record<string, unknown> {
   return {

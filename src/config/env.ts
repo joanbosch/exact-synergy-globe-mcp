@@ -1,5 +1,5 @@
-import { environmentSchema, type ParsedEnvironment } from "./schema.js";
-import type { ExactConfig } from "./types.js";
+import { environmentSchema, type ParsedEnvironment } from "@config/schema.js";
+import type { ExactConfig } from "@config/types.js";
 
 const SECRET_VARIABLES = new Set([
   "EXACT_API_PASSWORD",

@@ -1,6 +1,6 @@
 import { readFile } from "node:fs/promises";
 import { describe, expect, it } from "vitest";
-import { parseMetadata } from "../../src/odata/metadata-parser.js";
+import { parseMetadata } from "@odata/metadata-parser.js";
 
 describe("metadata parser", () => {
   it("normalizes entity sets, keys, fields, and public actions", async () => {

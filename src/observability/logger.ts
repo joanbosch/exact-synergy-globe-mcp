@@ -1,5 +1,5 @@
-import type { LogLevel } from "../config/types.js";
-import { redact } from "./redaction.js";
+import type { LogLevel } from "@config/types.js";
+import { redact } from "@observability/redaction.js";
 
 const PRIORITY: Record<Exclude<LogLevel, "silent">, number> = {
   debug: 10,

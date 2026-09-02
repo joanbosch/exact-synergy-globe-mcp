@@ -1,5 +1,5 @@
 import { describe, expect, it } from "vitest";
-import { redact } from "../../src/observability/redaction.js";
+import { redact } from "@observability/redaction.js";
 
 describe("redaction", () => {
   it("redacts nested secret keys and authorization strings", () => {

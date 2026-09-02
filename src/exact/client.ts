@@ -1,9 +1,9 @@
 import type { AxiosInstance, AxiosResponse } from "axios";
-import type { ExactConfig } from "../config/types.js";
-import type { Logger } from "../observability/logger.js";
-import { createAuthProvider } from "./auth/index.js";
-import { ExactError, normalizeExactError } from "./errors.js";
-import type { ExactRequest } from "./request.js";
+import type { ExactConfig } from "@config/types.js";
+import type { Logger } from "@observability/logger.js";
+import { createAuthProvider } from "@exact/auth/index.js";
+import { ExactError, normalizeExactError } from "@exact/errors.js";
+import type { ExactRequest } from "@exact/request.js";
 
 export class ExactClient {
   private readonly http: AxiosInstance | undefined;

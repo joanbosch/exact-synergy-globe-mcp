@@ -1,5 +1,5 @@
-import type { ExactAction, ExactEntity } from "../catalog/catalog-types.js";
-import type { ExactConfig } from "../config/types.js";
+import type { ExactAction, ExactEntity } from "@catalog/catalog-types.js";
+import type { ExactConfig } from "@config/types.js";
 
 export type WriteOperation = "create" | "update" | "delete" | "executeAction";
 
