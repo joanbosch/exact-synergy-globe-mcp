@@ -1,0 +1,66 @@
+{
+  "name": "exact-synergy-globe-mcp",
+  "version": "0.1.0",
+  "description": "Generic, metadata-driven MCP server for Exact Synergy Enterprise and Exact Globe+",
+  "type": "module",
+  "bin": {
+    "exact-synergy-globe-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "schemas",
+    "docs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "check": "npm run format:check && npm run lint && npm run typecheck && npm test && npm run build && npm run verify:generated",
+    "dev": "tsx src/index.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint": "eslint . --max-warnings=0",
+    "prepare": "npm run build",
+    "schema:generate": "tsx scripts/generate-json-schema.ts",
+    "start": "node dist/index.js",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "verify:generated": "tsx scripts/verify-generated-files.ts"
+  },
+  "keywords": [
+    "exact",
+    "synergy",
+    "globe",
+    "mcp",
+    "odata"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joanbosch/exact-synergy-globe-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "axios": "1.20.0",
+    "axios-ntlm": "1.4.6",
+    "fast-xml-parser": "5.11.1",
+    "zod": "4.5.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@types/node": "^22.18.0",
+    "eslint": "^9.39.1",
+    "prettier": "^3.6.2",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.2",
+    "typescript-eslint": "^8.69.0",
+    "vitest": "^3.2.4"
+  }
+}

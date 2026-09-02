@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="1.0" xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx">
+  <edmx:DataServices>
+    <Schema Namespace="Exact.Test" xmlns="http://schemas.microsoft.com/ado/2008/09/edm">
+      <EntityType Name="Account">
+        <Key><PropertyRef Name="ID" /></Key>
+        <Property Name="ID" Type="Edm.Guid" Nullable="false" />
+        <Property Name="AccountName" Type="Edm.String" Nullable="false" MaxLength="200" />
+        <Property Name="Active" Type="Edm.Boolean" Nullable="false" />
+      </EntityType>
+      <EntityType Name="Composite">
+        <Key><PropertyRef Name="Division" /><PropertyRef Name="Code" /></Key>
+        <Property Name="Division" Type="Edm.Int32" Nullable="false" />
+        <Property Name="Code" Type="Edm.String" Nullable="false" />
+      </EntityType>
+      <Action Name="ApproveRequest">
+        <Parameter Name="RequestID" Type="Edm.Guid" Nullable="false" />
+        <ReturnType Type="Edm.Boolean" />
+      </Action>
+      <Action Name="InternalMaintenance"><Parameter Name="value" Type="Edm.String" /></Action>
+      <EntityContainer Name="Entities">
+        <EntitySet Name="Accounts" EntityType="Exact.Test.Account" />
+        <EntitySet Name="Composites" EntityType="Exact.Test.Composite" />
+        <FunctionImport Name="RequestFlowApprove" ReturnType="Edm.Boolean" HttpMethod="POST">
+          <Parameter Name="RequestID" Type="Edm.Guid" Nullable="false" />
+        </FunctionImport>
+      </EntityContainer>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>
