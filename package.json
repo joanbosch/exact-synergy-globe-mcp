@@ -47,7 +47,7 @@
     "url": "git+https://github.com/joanbosch/exact-synergy-globe-mcp.git"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "1.30.0",
+    "@modelcontextprotocol/sdk": "1.32.2",
     "axios": "1.20.0",
     "axios-ntlm": "1.4.6",
     "fast-xml-parser": "5.11.1",
